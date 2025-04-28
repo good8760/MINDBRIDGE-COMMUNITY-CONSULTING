@@ -1,105 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
+<DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MINDBRIDGE Consulting</title>
   <link rel="stylesheet" href="style.css" />
-</head>
-<style>
+  <style>
+    /* General Styles */
     body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4f4f4;
-  color: #333;
-}
-header {
-  background: #004d40;
-  color: white;
-  padding: 2rem;
-  text-align: center;
-}
-nav {
-  background: #00796b;
-  display: flex;
-  justify-content: center;
-}
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-}
-nav li {
-  masrgin: 0 1rem;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 1rem;
-  display: block;
-  transition: background 0.3s;
-}
-nav a:hover {
-  background: #004d40;
-  border-radius: 5px;
-}
-section {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-footer {
-  background: #004d40;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-.slide-in {
-  animation: slideIn 1s ease-out;
-}
-.fade-in {
-  animation: fadeIn 1.5s ease-in;
-}
-@keyframes slideIn {
-  from {
-    transform: translateX(-50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-  }
-}
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
 
-    
-</style>
+    /* Header with Logo */
+    header {
+      background: #004d40;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header img {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      animation: logoFade 2s ease-in-out;
+    }
+    @keyframes logoFade {
+      0% { opacity: 0; transform: scale(0.5);}
+      100% { opacity: 1; transform: scale(1);}
+    }
+
+    /* Navigation */
+    nav {
+      background: #00796b;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      margin: 0;
+    }
+    nav li {
+      margin: 0 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      display: block;
+      transition: background 0.3s, transform 0.3s;
+      border-radius: 8px;
+    }
+    nav a:hover {
+      background: #004d40;
+      transform: scale(1.1);
+    }
+
+    /* Sections */
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* Footer */
+    footer {
+      background: #004d40;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    /* Animations */
+    .slide-in {
+      animation: slideIn 1s ease-out;
+    }
+    .fade-in {
+      animation: fadeIn 1.5s ease-in;
+    }
+    @keyframes slideIn {
+      from {
+        transform: translateX(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+      header img {
+        position: static;
+        display: block;
+        margin: 0 auto 1rem;
+      }
+    }
+  </style>
+</head>
 <body>
   <header>
+    <!-- Insert your logo here -->
+    <img src="folder/logo.png" alt="MINDBRIDGE Logo">
     <h1>MINDBRIDGE COMMUNITY CONSULTING</h1>
     <p>Empowering Minds. Transforming Lives.</p>
   </header>
 
   <nav>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">Who We Are</a></li>
-      <li><a href="#vision">Vision & Mission</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
+        <li><a href="home.php">Home</a></li>
+      <li><a href="about.php">Who We Are</a></li>
+      <li><a href="aims.php">Our Aim</a></li>
+      <li><a href="services.php">Services</a></li>
+      <li><a href="approach.php.php">Our Approach</a></li>
+      <li><a href="areas.php">Area</a></li>
+      <li><a href="description.php">Description</a></li>
+      <li><a href="contact.php">Contact</a></li>
     </ul>
   </nav>
 
@@ -114,7 +153,7 @@ footer {
     <p><strong>Mission:</strong> To empower churches and communities through Christ-centered education...</p>
   </section>
 
-  <section id="services" class="slide-in">
+  <section id="what-we-do" class="slide-in">
     <h2>What We Do</h2>
     <ul>
       <li>Christian Education & Training</li>
@@ -123,6 +162,22 @@ footer {
       <li>Leadership Development</li>
       <li>Online Learning Platform</li>
     </ul>
+  </section>
+
+  <section id="why-choose-us" class="fade-in">
+    <h2>Why Choose Us?</h2>
+    <p><strong>Holistic Approach:</strong> We address the physical, emotional, and spiritual needs of individuals and communities.</p>
+    <p><strong>Expertise:</strong> Our team combines academic knowledge with practical experience to deliver impactful solutions.</p>
+    <p><strong>Faith-Driven:</strong> Our work is rooted in Christian values, ensuring a compassionate and service-oriented approach.</p>
+    <p><strong>Global Impact:</strong> We work with communities worldwide, adapting our programs to meet diverse cultural and contextual needs.</p>
+  </section>
+
+  <section id="focus-areas" class="slide-in">
+    <h2>Key Focus Areas</h2>
+    <p><strong>Education:</strong> Empowering individuals and communities through access to quality education and skill-building programs.</p>
+    <p><strong>Psychosocial Support:</strong> Providing emotional and mental health support to help individuals overcome challenges and achieve their full potential.</p>
+    <p><strong>Evidence-Based Development:</strong> Designing and implementing programs rooted in research and data to ensure measurable and sustainable impact.</p>
+    <p><strong>Community Empowerment:</strong> Strengthening communities by fostering collaboration, leadership, and self-reliance.</p>
   </section>
 
   <section id="contact" class="fade-in">
@@ -136,19 +191,17 @@ footer {
   <footer>
     <p>&copy; 2025 MINDBRIDGE COMMUNITY CONSULTING</p>
   </footer>
-    
-    
 
   <script>
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
     });
-  });
-});
-
-    </script>
+  </script>
 </body>
 </html>

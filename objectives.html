@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strategic Objectives - MINDBRIDGE Consulting</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }    /* Header with Logo */
+    header {
+      background: #004d40;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header img {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      animation: logoFade 2s ease-in-out;
+    }
+    @keyframes logoFade {
+      0% { opacity: 0; transform: scale(0.5);}
+      100% { opacity: 1; transform: scale(1);}
+    }
+    nav {
+      background: #00796b;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+    }
+    nav li {
+      margin: 0 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      display: block;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #004d40;
+      border-radius: 5px;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    h2 {
+      color: #00796b;
+      margin-bottom: 1.5rem;
+      border-bottom: 3px solid #00796b;
+      padding-bottom: 0.5rem;
+    }
+    .objectives-list {
+      list-style: none;
+      padding: 0;
+    }
+    .objective-item {
+      background: #e0f2f1;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .objective-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .objective-item h3 {
+      color: #00796b;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;    footer {
+  background: #004d40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+      }
+      to {
+        opacity: 1;
+      }
+    }
+       @media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+  </style>
+</head>
+<body>
+  <header> <!-- Insert your logo here -->
+      <img src="folder/logo.png" alt="MINDBRIDGE Logo">
+    <h1>MINDBRIDGE COMMUNITY CONSULTING</h1>
+    <p>Empowering Minds. Transforming Lives.</p>
+  </header>
+
+  <nav>
+    <ul>
+        <li><a href="home.php">Home</a></li>
+      <li><a href="about.php">Who We Are</a></li>
+      <li><a href="aims.php">Our Aim</a></li>
+      <li><a href="services.php">Services</a></li>
+      <li><a href="approach.php.php">Our Approach</a></li>
+      <li><a href="areas.php">Area</a></li>
+      <li><a href="description.php">Description</a></li>
+      <li><a href="contact.php">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container fade-in">
+    <section id="strategic-objectives">
+      <h2>Our Strategic Objectives</h2>
+      <ul class="objectives-list">
+        <li class="objective-item">
+          <h3>Implement a Comprehensive Curriculum</h3>
+          <p>Develop and deploy a detailed curriculum that effectively addresses the educational and developmental needs of churches and communities we serve.</p>
+        </li>
+        <li class="objective-item">
+          <h3>Provide Tailored Training and Workshops</h3>
+          <p>Offer customized training programs and workshops designed to strengthen leadership skills and enhance the overall capacity of ministry within churches and organizations.</p>
+        </li>
+        <li class="objective-item">
+          <h3>Create a Scalable Online Learning Platform</h3>
+          <p>Establish and maintain an accessible and scalable online learning platform to extend our reach and provide educational resources across various regions.</p>
+        </li>
+        <li class="objective-item">
+          <h3>Engage in Strategic Partnerships</h3>
+          <p>Actively collaborate with churches, NGOs, and other institutions to broaden the impact and ensure the long-term sustainability of MindBridge programs.</p>
+        </li>
+        <li class="objective-item">
+          <h3>Integrate Holistic Approaches</h3>
+          <p>Incorporate psychological and spiritual perspectives within our programs to foster comprehensive community mental health, effective leadership development, and meaningful discipleship.</p>
+        </li>
+        <li class="objective-item">
+          <h3>Maintain Program Integrity</h3>
+          <p>Ensure the highest standards of academic and spiritual integrity in all our offerings through rigorous assessments and practical evaluations.</p>
+        </li>
+        <li class="objective-item">
+          <h3>Achieve Scalable Global Impact</h3>
+          <p>Begin with local implementation, initially focusing on Africa, with a strategic plan to expand our network globally, empowering Christian communities worldwide.</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 MINDBRIDGE COMMUNITY CONSULTING</p>
+  </footer>
+
+  <script>
+    // Basic fade-in animation on load (already handled by CSS)
+  </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Focus Areas - MINDBRIDGE Consulting</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.7;
+    }
+        /* Header with Logo */
+    header {
+      background: #004d40;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header img {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      animation: logoFade 2s ease-in-out;
+    }
+    @keyframes logoFade {
+      0% { opacity: 0; transform: scale(0.5);}
+      100% { opacity: 1; transform: scale(1);}
+    }
+    nav {
+      background: #00796b;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+    }
+    nav li {
+      margin: 0 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      display: block;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #004d40;
+      border-radius: 5px;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 700px;
+      margin: 2rem auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    h2 {
+      color: #00796b;
+      margin-bottom: 1.5rem;
+      border-bottom: 3px solid #00796b;
+      padding-bottom: 0.5rem;
+      text-align: center;
+    }
+    .focus-areas-list {
+      list-style: none;
+      padding: 0;
+    }
+    .focus-area-item {
+      background: #e0f2f1;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .focus-area-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .focus-area-item h3 {
+      color: #00796b;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+          @media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+    footer {
+  background: #004d40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+  </style>
+</head>
+<body>
+  <header> <!-- Insert your logo here -->
+      <img src="folder/logo.png" alt="MINDBRIDGE Logo">
+    <h1>MINDBRIDGE COMMUNITY CONSULTING</h1>
+    <p>Empowering Minds. Transforming Lives.</p>
+  </header>
+
+  <nav>
+    <ul>
+        <li><a href="home.php">Home</a></li>
+      <li><a href="about.php">Who We Are</a></li>
+      <li><a href="aims.php">Our Aim</a></li>
+      <li><a href="services.php">Services</a></li>
+      <li><a href="approach.php.php">Our Approach</a></li>
+      <li><a href="areas.php">Area</a></li>
+      <li><a href="description.php">Description</a></li>
+      <li><a href="contact.php">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container fade-in">
+    <section id="focus-areas">
+      <h2>Our Key Focus Areas</h2>
+      <ul class="focus-areas-list">
+        <li class="focus-area-item">
+          <h3>Education</h3>
+          <p>We are committed to empowering individuals and communities by providing access to quality education and developing essential skill-building programs that foster growth and opportunity.</p>
+        </li>
+        <li class="focus-area-item">
+          <h3>Psychosocial Support</h3>
+          <p>We offer vital emotional and mental health support services designed to help individuals navigate challenges, build resilience, and ultimately achieve their full potential for a healthier and more fulfilling life.</p>
+        </li>
+        <li class="focus-area-item">
+          <h3>Evidence-Based Development</h3>
+          <p>Our programs are carefully designed and implemented using rigorous research and data-driven insights, ensuring that our interventions are effective, measurable, and contribute to sustainable positive change within the communities we serve.</p>
+        </li>
+        <li class="focus-area-item">
+          <h3>Community Empowerment</h3>
+          <p>We focus on strengthening communities from within by fostering strong collaboration, cultivating local leadership, and promoting self-reliance, enabling them to drive their own development and create lasting impact.</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 MINDBRIDGE COMMUNITY CONSULTING</p>
+  </footer>
+
+  <script>
+    // Basic fade-in animation on load (already handled by CSS)
+  </script>
+</body>
+</html>
